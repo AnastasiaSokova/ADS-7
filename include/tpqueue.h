@@ -5,7 +5,7 @@
 
 template<typename T>
 class TPQueue {
-private:
+ private:
     struct ITEM {
         T value;
         ITEM* next;
@@ -14,7 +14,7 @@ private:
     TPQueue::ITEM* create(const T&);
     ITEM* tail;
     ITEM* head;
-public:
+ public:
     TPQueue():head(nullptr), tail(nullptr) {}
     void push(const T&);
     T pop();
